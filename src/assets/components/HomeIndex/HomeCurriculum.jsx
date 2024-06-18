@@ -6,7 +6,7 @@ const HomeCurriculum = () => {
   };
   return (
     <>
-      <div className="bg-white xl:min-h-[5%] md:min-h-[2%] min-h-[5%] h-fit w-[85%] py-[4rem] shadow-[0_4px_5px_rgba(0,0,0,0.09)] rounded-md mb-[10rem] flex flex-col items-center justify-center gap-12">
+      <div className="bg-white xl:min-h-[5%] md:min-h-[2%] min-h-[5%] h-fit w-[85%] py-[4rem] shadow-[0_4px_5px_rgba(0,0,0,0.09)] rounded-md mb-[10rem] flex flex-col items-center justify-center gap-12 mt-5">
         <div className='w-[50%] flex flex-col items-center gap-5'>
           <h2 className='text-xl md:text-2xl text-center xl:text-center xl:text-5xl font-bold'>We are looking for you!</h2>
           <h2 className='text-sm md:text-md text-center xl:text-center xl:text-lg w-[80%]'>we are a market leader and we are looking for people to work with us</h2>

@@ -1,14 +1,11 @@
-import React from 'react'
-import { useEffect, useState, useRef } from "react";
+import { useEffect} from "react";
 import { Link as Anchor } from 'react-router-dom'
 import categories_actions from '../../../store/actions/categories'
 import { useSelector, useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
 const HomeCategory = () => {
 
   let { categories_read } = categories_actions
   const dispatch = useDispatch()
-  let navigate = useNavigate()
   let categories = useSelector(store => store.categories.categories)
 
 
@@ -23,7 +20,7 @@ const HomeCategory = () => {
 
   return ( 
     <>
-      <div className="bg-white w-[85%] h-fit flex rounded-md shadow-[0_4px_5px_rgba(0,0,0,0.09)] flex-col gap-2">
+      <div className="bg-white w-[85%] h-fit flex rounded-md shadow-[0_4px_5px_rgba(0,0,0,0.09)] flex-col mt-5">
         <div className="w-[100%] justify-center flex">
           <h2 className="text-2xl font-medium mt-[4rem]">Shop by category</h2>
         </div>

@@ -2,7 +2,7 @@
 const HomeBuying = () => {
   return (
     <>
-      <div className="w-[85%]  selection:bg-[#7847E0] selection:text-[#ffe927] flex justify-center text-[#393939] shadow-[0_4px_5px_rgba(0,0,0,0.09)] rounded-md bg-white">
+      <div className="w-[85%]  selection:bg-[#7847E0] selection:text-[#ffe927] flex justify-center text-[#393939] shadow-[0_4px_5px_rgba(0,0,0,0.09)] rounded-md bg-white mt-5">
         <div className="h-fit w-[95%] items-center justify-center gap-0 md:gap-8 flex flex-col lg:flex-row">
           <div className="flex flex-col lg:flex-row gap-3 justify-center items-center content-center h-40 lg:w-[25]">
             {" "}

@@ -32,13 +32,12 @@ const Home = () => {
   return (
     <>
       <HomeFirstComponent />
-      <div className="bg-white h-[10vh] xl:h-[5vh]"></div>
-      <div className="h-fit min-h-[10vh] bg-[#EDEBEB] flex  flex-col items-center gap-80 lg:gap-12 ">
+      <div className="h-fit min-h-[10vh] bg-[#EDEBEB] flex  flex-col items-center">
       
        <HomeOfferts /> 
         <HomeBuying /> 
         {/* div de cartas */}
-         <div className="bg-white text-[#393939] shadow-[0_4px_5px_rgba(0,0,0,0.09)] rounded-md h-fit xl:min-h-[25%] 2xl:min-h-[20%] w-[85%] flex flex-col p-[4rem]">
+         <div className="bg-white text-[#393939] shadow-[0_4px_5px_rgba(0,0,0,0.09)] rounded-md h-fit xl:min-h-[25%] 2xl:min-h-[20%] w-[85%] flex flex-col p-[4rem] mt-5">
           <h2 className="text-2xl w-[100%] items-center mb-[4rem] justify-center flex font-medium">Best Sellers</h2>
           <div className="h-fit xl:h-[60%] lg:w-full gap-4 justify-center flex-wrap flex">
             {cards.map((car) => (

@@ -1,9 +1,8 @@
-import React from 'react'
 
 const MiddlePhotoSection = () => {
   return (
     <>
-      <div className="bg-white xl:min-h-[8%] rounded-md shadow-[0_4px_5px_rgba(0,0,0,0.09)] h-fit w-[85%] flex flex-col xl:flex-row xl:justify-between gap-2">
+      <div className="bg-white xl:min-h-[8%] rounded-md shadow-[0_4px_5px_rgba(0,0,0,0.09)] h-fit w-[85%] flex flex-col xl:flex-row xl:justify-between mt-5">
         <div className="w-[60%] xl:block hidden">
           <img className="h-[100%] object-cover rounded-md w-[100%]" src="https://i.ibb.co/2gz02R4/image.png" alt="" />
         </div>
