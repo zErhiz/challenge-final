@@ -1,15 +1,12 @@
-import React from "react";
 import { BsInstagram, BsGithub } from "react-icons/bs";
-import { useEffect, useState, useRef } from "react";
+import { useEffect} from "react";
 import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
 import { Link as Anchor } from "react-router-dom";
 import categories_actions from '../../store/actions/categories'
 import { useSelector, useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
 const Footer = () => {
   let { categories_read } = categories_actions
   const dispatch = useDispatch()
-  let navigate=useNavigate()
   let categories = useSelector(store => store.categories.categories)
  
 
@@ -17,7 +14,6 @@ const Footer = () => {
   useEffect(() => {
     if (categories.length === 0) {
         dispatch(categories_read())
-       
     }
 }, [])
   return (
