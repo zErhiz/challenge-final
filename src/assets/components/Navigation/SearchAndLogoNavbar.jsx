@@ -167,7 +167,7 @@ const SearchAndLogoNavbar = () => {
                   strokeWidth="2"
                   stroke="currentColor"
                   className="2xl:w-8 2xl:h-8 h-7 w-7 cursor-pointer"
-                >
+                > 
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
