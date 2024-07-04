@@ -47,7 +47,7 @@ function Favourites({openModal, onCloseModal}) {
     return (
         <div className='w-full'>
             
-            <div className='w-full h-screen top-0 z-30 fixed'
+            <div className='w-full h-screen top-0 z-30'
                         onClick={() => onCloseModal(false)}></div>
         <div className="absolute transition-all z-40 gap-3 top-[95px] right-16 mt-2 bg-[#ffffff] w-[22rem] shadow-[0_4px_12px_rgba(0,0,0,0.07)] drop-shadow-[0_1px_2px_rgba(0,0,0,0.15)] rounded-md text-[#393939] items-center flex flex-col h-fit py-[2rem]">
                 {favorites?.map(product => (

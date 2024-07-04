@@ -61,7 +61,7 @@ const SearchAndLogoNavbar = () => {
       .catch(err => alert(err))
     dispatch(SaveUserLogin({
       token: "",
-      user: {}
+      user: {} 
     }))
   }
   const tokenLocalStorage = localStorage.getItem('token');
@@ -91,7 +91,7 @@ const SearchAndLogoNavbar = () => {
       <Favourites openModal={fav}
         onCloseModal={() => setFav(false)} />
 
-      <div className=" justify-center bg-[#FFFFFF] h-[100px] lg:h-[80px] flex lg:justify-between">
+      <div className=" justify-center bg-[#FFFFFF] h-[100px] lg:h-[80px] flex lg:justify-between fixed w-full z-50 border-b-2 border-[#7847E0] top-[30px] ">
         <div className="px-4 lg:flex lg:gap-12 flex flex-col lg:flex-row justify-center items-center content-center lg:px-12">
           <div className=" flex flex-row gap-12">
             <img className="w-24 object-cover cursor-pointer" onClick={home} src={logo} alt="logo" />
@@ -100,7 +100,7 @@ const SearchAndLogoNavbar = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg> </button>
           </div>
-          <div className="flex items-center mt-3">
+          <div className="flex items-center mt-3 ">
             <SearchBar />
 
           </div>

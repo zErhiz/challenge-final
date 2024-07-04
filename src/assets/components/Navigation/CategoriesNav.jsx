@@ -46,7 +46,7 @@ const CategoriesNav = () => {
   }, [categoriesCheked, manufacturerCheked, filterPrice])
 
   return (
-    <div className='h-[60px] bg-[#7847E0] hidden lg:flex items-center content-center pl-12'>
+    <div className='h-[60px] bg-[#7847E0] hidden lg:flex items-center content-center pl-12 mt-[110px]'>
       {viewCategories || viewManufacturers || viewPrice ? (
         <div className="fixed top-0 left-0 h-screen w-screen z-10"
           onClick={() => { setViewManufacturers(false), setViewCategories(false), setViewPrice(false) }}></div>
