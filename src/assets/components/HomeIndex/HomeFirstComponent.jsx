@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import fondo from '../../../../public/images/banners/Home.png'
+import CategoriesNav from '../Navigation/CategoriesNav';
 
 const HomeFirstComponent = () => {
 
@@ -7,6 +8,7 @@ const HomeFirstComponent = () => {
 
   return (
     <>
+      <CategoriesNav />
       <div className='relative '>
         <div className='w-full h-[80vh] flex justify-end'>
           <img src={fondo} alt='image bg' className='h-full object-cover' />
@@ -18,7 +20,6 @@ const HomeFirstComponent = () => {
           <button onClick={() => navigate(`/allproducts`)} className='rounded-full py-2.5 w-[40%] xl:w-[10rem] bg-[#7847E0] text-white font-semibold z-10'>Buy now</button>
         </div>
       </div>
-
     </>
   )
 }
